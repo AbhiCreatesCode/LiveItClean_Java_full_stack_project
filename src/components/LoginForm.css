@@ -1,0 +1,148 @@
+/* Add space on top */
+.navbar-container {
+  padding-top: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  background: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Logo and Title */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2f855a;
+  margin-left: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 250px;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2f855a;
+  box-shadow: 0 0 5px rgba(47, 133, 90, 0.5);
+}
+
+/* Navbar Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Dropdown Button */
+.menu-button {
+  padding: 8px 15px;
+  border: 1px solid #2f855a;
+  border-radius: 20px;
+  background: white;
+  color: #2f855a;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-button:hover {
+  background: #e6f4ea;
+}
+
+/* Dropdown Menu */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 200px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown a {
+  padding: 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.dropdown a:hover {
+  background: #e6f4ea;
+  color: #2f855a;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Login Button */
+.login-button {
+  padding: 8px 15px;
+  border: 1px solid #2f855a;
+  border-radius: 20px;
+  background: #2f855a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.login-button:hover {
+  background: #276749;
+}

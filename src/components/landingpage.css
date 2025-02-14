@@ -1,0 +1,100 @@
+/* Landing Page Styles */
+.landing-container {
+    text-align: center;
+    padding: 50px;
+    background: #f0fdf4;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: #2f855a;
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background: white;
+    color: #2f855a;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #e6f4ea;
+  }
+  
+  /* Sliding Window */
+  .sliding-window {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .slides {
+    display: flex;
+    animation: slide 10s infinite linear;
+  }
+  
+  .slide {
+    background: #48bb78;
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-320px); }
+    66% { transform: translateX(-640px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Useful Links */
+  .useful-links {
+    margin-top: 30px;
+  }
+  
+  .useful-links h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .useful-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .useful-links li {
+    margin: 10px 0;
+  }
+  
+  .useful-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #2f855a;
+  }
+  
+  .useful-links a:hover {
+    text-decoration: underline;
+  }
+  
