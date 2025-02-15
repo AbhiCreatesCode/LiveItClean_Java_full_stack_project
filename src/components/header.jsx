@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "tailwindcss";
 import logo from "../assets/download_logo.png";
 
 const Header = () => {
