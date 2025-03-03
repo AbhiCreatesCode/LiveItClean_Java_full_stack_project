@@ -1,11 +1,11 @@
-import { useState, useEffect, useContext } from "react";
-import { FaBars, FaTimes, FaUser, FaShoppingCart, FaSignOutAlt } from "react-icons/fa";
+import { useContext } from "react";
+import { FaUser, FaShoppingCart, FaSignOutAlt } from "react-icons/fa";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext"; // Import AuthContext
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const { user, logout } = useContext(AuthContext); // ✅ Use context instead of localStorage
   const navigate = useNavigate();
 

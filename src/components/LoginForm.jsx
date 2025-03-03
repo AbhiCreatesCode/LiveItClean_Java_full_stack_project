@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 
 const LoginForm = () => {
@@ -57,7 +58,7 @@ const LoginForm = () => {
                     {/* Password Input */}
                     <div className="relative mb-4">
                         <input 
-                            type="password"  // ✅ Fixed: Added password field
+                            type="password"  
                             name="password"
                             placeholder="Password"
                             value={formData.password}
@@ -73,6 +74,16 @@ const LoginForm = () => {
                         Login
                     </button>
                 </form>
+
+                {/* Register / Sign Up Link */}
+                <div className="text-center mt-4">
+                    <p className="text-gray-700">
+                        Don&apos;t have an account? 
+                        <NavLink to="/signup" className="text-green-600 font-bold hover:underline ml-1">
+                            Sign Up
+                        </NavLink>
+                    </p>
+                </div>
             </div>
         </div>
     );
