@@ -40,8 +40,10 @@
 // }
 
 // export default App;import { Routes, Route } from "react-router-dom";  // ❌ No need to import BrowserRouter
+
+
 import { Routes, Route } from "react-router-dom"; // ✅ Ensure correct import
-import Layout from "./components/Layout";
+import Layout from "./components/layout";
 import Landing from "./components/landing";
 import Login from "./pages/login";
 import Signup from "./pages/singnup";
