@@ -43,7 +43,7 @@
 
 
 import { Routes, Route } from "react-router-dom"; // ✅ Ensure correct import
-import Layout from "./components/layout";
+import Layout from "../src/components/layout"
 import Landing from "./components/landing";
 import Login from "./pages/login";
 import Signup from "./pages/singnup";
