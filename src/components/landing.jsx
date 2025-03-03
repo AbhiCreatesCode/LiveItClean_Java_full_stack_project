@@ -56,7 +56,8 @@
 
 
 import { motion } from "framer-motion";
-import "./landingPage.css";
+import "../components/landingpage.css"
+
 import videoBg from "../assets/backgroundVideo.mp4"; 
 
 const LandingPage = () => {
