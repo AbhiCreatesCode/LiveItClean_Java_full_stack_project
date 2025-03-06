@@ -48,6 +48,7 @@ import Landing from "./components/landing";
 import Login from "./pages/login";
 import Signup from "./pages/singnup";
 import Profile from "./pages/Profile";
+import Productpage from "./pages/productspage";
 
 function App() {
     return (
@@ -57,6 +58,7 @@ function App() {
                 <Route path="login" element={<Login />} />
                 <Route path="signup" element={<Signup />} />
                 <Route path="profile" element={<Profile />} />
+                <Route path="explore" element={<Productpage />} />
             </Route>
         </Routes>
     );
