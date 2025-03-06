@@ -46,9 +46,15 @@ const Header = () => {
               </button>
             </div>
           ) : (
+            <>
             <NavLink className="px-4 py-2 border rounded-full text-green-700 hover:bg-green-100 hover:scale-105 transition duration-300 shadow-md" to="/login">
               Sign In
             </NavLink>
+
+            <NavLink className="px-4 py-2 border rounded-full text-green-700 hover:bg-green-100 hover:scale-105 transition duration-300 shadow-md" to="/signup">
+            Sign Up
+          </NavLink>
+          </>
           )}
         </div>
       </div>
