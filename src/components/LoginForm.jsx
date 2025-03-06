@@ -38,7 +38,7 @@ const LoginForm = () => {
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
             <div className="bg-white p-8 rounded-lg shadow-lg w-96">
-                <h1 className="text-2xl font-bold text-center text-green-700 mb-6">Login</h1>
+                <h1 className="text-2xl font-bold text-center text-green-700 mb-6">LOGIN</h1>
                 {error && <p className="text-red-600 text-sm mb-4 text-center">{error}</p>}
                 <form onSubmit={handleSubmit}>
                     {/* Username Input */}
@@ -71,7 +71,7 @@ const LoginForm = () => {
 
                     {/* Submit Button */}
                     <button type="submit" className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition duration-300">
-                        Login
+                        LOGIN
                     </button>
                 </form>
 
